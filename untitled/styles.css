@@ -1,0 +1,204 @@
+/* CSS Styles für Hello JavaScript Projekt */
+
+/* Reset und Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styles */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+/* Typography */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Text Area */
+#mainText {
+    font-size: 1.5em;
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    line-height: 1.4;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainText:hover {
+    background-color: #f0f8ff;
+    border-color: #bbb;
+}
+
+/* Button Container */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Button Base Styles */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    min-width: 140px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Button Colors */
+.btn-text {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+}
+
+.btn-font {
+    background: linear-gradient(45deg, #2196F3, #1976D2);
+    color: white;
+}
+
+.btn-color {
+    background: linear-gradient(45deg, #FF9800, #F57C00);
+    color: white;
+}
+
+.btn-size {
+    background: linear-gradient(45deg, #9C27B0, #7B1FA2);
+    color: white;
+}
+
+.btn-reset {
+    background: linear-gradient(45deg, #f44336, #d32f2f);
+    color: white;
+}
+
+/* Button Hover Effects */
+.btn-text:hover {
+    background: linear-gradient(45deg, #45a049, #4CAF50);
+}
+
+.btn-font:hover {
+    background: linear-gradient(45deg, #1976D2, #2196F3);
+}
+
+.btn-color:hover {
+    background: linear-gradient(45deg, #F57C00, #FF9800);
+}
+
+.btn-size:hover {
+    background: linear-gradient(45deg, #7B1FA2, #9C27B0);
+}
+
+.btn-reset:hover {
+    background: linear-gradient(45deg, #d32f2f, #f44336);
+}
+
+/* Info Box */
+.info {
+    margin-top: 30px;
+    padding: 15px;
+    background: linear-gradient(45deg, #e3f2fd, #f3e5f5);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1565c0;
+    border-left: 4px solid #2196F3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        min-width: 300px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #mainText {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    button {
+        min-width: 120px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Animation Classes für JavaScript */
+.text-changed {
+    animation: pulse 0.5s ease-in-out;
+}
+
+.reset-animation {
+    animation: fadeInOut 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
