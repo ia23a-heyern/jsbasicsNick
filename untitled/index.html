@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>🚀 Hello JavaScript!</h1>
+
+    <div id="mainText">
+        Willkommen zur JavaScript-Übung!<br>
+        Klicke auf die Buttons, um Änderungen zu sehen.
+    </div>
+
+    <div class="button-group">
+        <button class="btn-text" onclick="changeText()">Text ändern</button>
+        <button class="btn-font" onclick="changeFont()">Schriftart ändern</button>
+        <button class="btn-color" onclick="changeColor()">Farbe ändern</button>
+        <button class="btn-size" onclick="changeSize()">Größe ändern</button>
+        <button class="btn-reset" onclick="resetAll()">Zurücksetzen</button>
+    </div>
+</div>
+
+<!-- JavaScript wird am Ende geladen für bessere Performance -->
+<script src="index.js"></script>
+</body>
+</html>
